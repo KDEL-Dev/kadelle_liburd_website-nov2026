@@ -7,6 +7,7 @@
     --emphasis-color: #EFCB68;
 
     --btn-main-color: #4e2172;
+    --btn-main-color-hover: #35174e;
 
     --web-body-grey: #202433;
 
@@ -111,14 +112,17 @@
 #webBody .btn-primary
 {
     background-color: var(--btn-main-color);
-    border: none;
+    border: 1px solid transparent;
+
+    transition: .25s ease-in-out;
 }
 
 #webBody .btn-primary:hover
 {
-    background-color: var(--btn-main-color);
-    filter: brightness(.75);
+    background-color: var(--btn-main-color-hover);
+    /* filter: brightness(.75); */
     color: var(--emphasis-color);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #webBody h2
@@ -310,4 +314,35 @@
 #webContact .container
 {
     min-height: 200px;
+}
+
+#webContact h2
+{
+    text-decoration: none;
+    color: var(--emphasis-color);
+}
+
+#webEmailBtn
+{
+    height: 75px;
+}
+
+.contactIcon
+{
+    height: 75px;
+
+    background-color: var(--btn-main-color);
+    border: 1px solid transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contactIcon:hover
+{
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background-color: var(--btn-main-color-hover);
+    color: var(--emphasis-color);
 }
