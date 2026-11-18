@@ -1,0 +1,286 @@
+:root
+{
+    /* --main-color: #000411; */
+    --main-color: #0c0e14;
+    --secondary-color: #160c28;
+
+    --emphasis-color: #EFCB68;
+
+    --btn-main-color: #4e2172;
+
+    --web-body-grey: #202433;
+
+    
+}
+
+/* =================================== */
+/* ================ NAV ============== */
+/* =================================== */
+
+.navbar
+{
+    background-color: var(--main-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+#webBody
+{
+
+    background-color: var(--web-body-grey);
+
+}
+
+/* =================================== */
+/* ============= HEADER ============ */
+/* =================================== */
+
+#webHeader
+{
+    min-height: 500px; /* TEMP */
+
+    background-color: #0c0513; 
+
+/*
+    Source - https://stackoverflow.com/a/32861765
+    Posted by shunryu111, modified by community. See post 'Timeline' for change history
+    Retrieved 2026-11-16, License - CC BY-SA 4.0
+*/
+
+    background-image:
+    linear-gradient(to bottom, transparent 25%, #00030a 90%),
+    linear-gradient(to right, rgba(128, 128, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
+
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+#webHeader h1
+{
+    color: #E1EFE6;
+    font-size: 4rem;
+}
+
+.textDim
+{
+    color: #AEB7B3;
+}
+
+.textBright
+{
+    color: #E1EFE6;
+}
+
+.emphasisText
+{
+    color: var(--emphasis-color);
+}
+
+/* =================================== */
+/* ============= OVERVIEW ============ */
+/* =================================== */
+
+
+#webMain
+{
+    background-image: linear-gradient(to bottom, #00030a 33%, rgb(15, 6, 19));
+}
+
+#webBody .btn-primary
+{
+    background-color: var(--btn-main-color);
+    border: #AEB7B3;
+}
+
+#webBody .btn-primary:hover
+{
+    background-color: var(--btn-main-color);
+    filter: brightness(.75);
+    border: #E1EFE6;
+}
+
+
+#webOverview
+{
+    /* background-color: #000411; */
+}
+
+/* TECHNOLOGY */
+#webTechIcons
+{
+    color: #AEB7B3;
+
+    transition: .5s ease-in-out;
+}
+
+#webTechIcons div:hover
+{
+    /* color: #E1EFE6; */
+    color: var(--emphasis-color);
+    cursor: pointer;
+}
+
+#profileCard
+{
+    background-color: #160c28;
+    background-color: var(--main-color);
+}
+
+#profileCard h3
+{
+    color: #E1EFE6;
+}
+
+#profileCard p
+{
+    color: #AEB7B3;
+}
+
+.techCircle
+{
+    padding: 0;
+    margin: 8px 0; 
+
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid white;
+    border-radius: 30rem;
+
+    background-color: #160c28;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideText
+{
+    opacity: 0;
+    position: absolute;
+    top: -10%;
+    z-index: 2;
+
+    padding: 5px 25px;
+    background-color: #160c28;
+    border: 1px solid rgba(239, 203, 104, 0.20);
+    border-radius: 25px;
+    text-align: center;
+
+    transition: .2s ease-in-out;
+}
+
+.slideText p
+{
+    margin-bottom: 0;
+    color: var(--emphasis-color);
+}
+
+
+.techIcons:hover .slideText
+{
+    opacity: 1;
+    top: -30%;
+
+    color: white;
+}
+
+
+#imageCircle
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 8px;
+
+    overflow: hidden;
+
+    border: 3px solid white;
+
+}
+
+#myImgCont img
+{
+    width: 300px;
+
+
+}
+
+#myImg
+{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#webProjects
+{
+    /* background-color: #000411; */
+}
+
+#webProjects .card img
+{
+    height: 220px;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+#webProjects .card-text
+{
+    min-height: 180px;
+}
+
+/* PRE */
+#webPrevWork
+{
+    /* background-color: #000411; */
+}
+
+
+/* =================================== */
+/* ========= SITES WORKED ON ========= */
+/* =================================== */
+
+.workWebsiteImages div 
+{
+    z-index: 2;
+    pointer-events: none;
+}
+
+.workWebsiteImages p 
+{
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.workWebsiteImages:hover p 
+{
+    opacity: 1;
+}
+
+.workWebsiteImages img 
+{
+    transition: filter .2s ease-in-out;
+}
+
+
+.workWebsiteImages:hover img 
+{
+    filter: brightness(.33);
+}
+
+
+/* =================================== */
+/* ============= CONTACT ============= */
+/* =================================== */
+
+#webContact
+{
+    /* background-color: #00030a; */
+}
+
+#webContact .container
+{
+    min-height: 200px;
+}
