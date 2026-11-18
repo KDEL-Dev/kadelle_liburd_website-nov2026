@@ -249,6 +249,11 @@
     /* background-color: #000411; */
 }
 
+#webProjects .card-title
+{
+    border-bottom: 3px solid var(--raptor-red)
+}
+
 #webProjects .card img
 {
     height: 220px;
