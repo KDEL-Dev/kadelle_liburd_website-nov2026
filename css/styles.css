@@ -1,6 +1,6 @@
 :root
 {
-    /* --main-color: #000411; */
+    
     --main-color: #0c0e14;
     --secondary-color: #160c28;
 
@@ -12,7 +12,10 @@
     --web-body-grey: #202433;
 
     --raptor-red:rgb(70, 0, 0);
-    
+
+    --text-bright:#E1EFE6;
+    --text-dim: #AEB7B3;
+
 }
 
 
@@ -128,12 +131,11 @@
 #webBody h2
 {
     text-decoration: underline var(--raptor-red);
+    color: var(--text-bright);
 }
 
-#webOverview
-{
-    /* background-color: #000411; */
-}
+
+
 
 /* TECHNOLOGY */
 #webTechIcons
@@ -265,6 +267,7 @@
 #webProjects .card-text
 {
     min-height: 180px;
+    
 }
 
 /* PRE */
