@@ -1,6 +1,5 @@
 :root
 {
-    
     --main-color: #0c0e14;
     --secondary-color: #160c28;
 
@@ -32,7 +31,7 @@
 
 
 
-#webBody
+.webBody
 {
 
     background-color: var(--web-body-grey);
@@ -43,7 +42,7 @@
 /* ============= HEADER ============ */
 /* =================================== */
 
-#webHeader
+.headerDesign
 {
     background-color: #0c0513; 
 
@@ -63,13 +62,13 @@
 
 
 
-#webHeader h1
+.headerDesign h1
 {
     color: #E1EFE6;
     font-size: 4rem;
 }
 
-#webHeader img
+.headerDesign img
 {
     height: 100vh;
     height: 100dvh;
@@ -112,7 +111,7 @@
     background-image: linear-gradient(to bottom, #00030a 33%, rgb(15, 6, 19));
 }
 
-#webBody .btn-primary
+.webBody .btn-primary
 {
     background-color: var(--btn-main-color);
     border: 1px solid transparent;
@@ -120,7 +119,7 @@
     transition: .25s ease-in-out;
 }
 
-#webBody .btn-primary:hover
+.webBody .btn-primary:hover
 {
     background-color: var(--btn-main-color-hover);
     /* filter: brightness(.75); */
@@ -128,7 +127,7 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-#webBody h2
+.webBody h2
 {
     text-decoration: underline var(--raptor-red);
     color: var(--text-bright);
@@ -353,4 +352,13 @@
     border: 1px solid rgba(255, 255, 255, 0.20);
     background-color: var(--btn-main-color-hover);
     color: var(--emphasis-color);
+}
+
+/* ---------------------
+        VFX PAGE 
+--------------------- */
+
+#vfxMain
+{
+    background-image: linear-gradient(to bottom, #00030a 33%, rgb(15, 6, 19));
 }
